@@ -11,10 +11,7 @@ import java.io.IOException;
 @RestController
 public class ApiController {
 
-    private String BLOB_STRING = "https://gallerymdrobot.blob.core.windows.net/gallery/";
-
-    final
-    BlobService blobService;
+    private final BlobService blobService;
 
     public ApiController(BlobService blobService) {
         this.blobService = blobService;
